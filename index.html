@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Pernikahan</title>
+
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="musikUndangan" loop src="assets/songaudio.mp3"></audio>
+    <button type="button" id="tombolMusik" class="tombol-musik" aria-label="Putar musik" aria-pressed="false">
+        <span id="ikonMusik">&#9654;</span>
+    </button>
+
+    <section class="halaman undangan d-flex justify-content-center align-items-center">
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kiri">
+
+        <div class="konten text-center px-3">
+            <img src="assets/logo.svg" alt="Logo undangan" class="logo img-fluid">
+
+            <div class="mt-4">
+                <p class="judul-cover">Undangan Pernikahan</p>
+                <p class="penerima">Kepada Yth. Bapak/Ibu/Sdr/i</p>
+                <p class="penerima"><b>Hades &amp; Persephone</b></p>
+                <p class="tempat">Di Tempat</p>
+            </div>
+        </div>
+
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kanan">
+    </section>
+
+    <section class="halaman save-date bg-putih d-flex justify-content-center align-items-center">
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kanan-atas">
+
+        <div class="konten-date container text-center">
+            <h1 class="judul-bagian">Save The Date</h1>
+            <p class="tanggal-date">Minggu, 8 November 2026</p>
+
+            <div class="countdown d-flex justify-content-center flex-wrap gap-2 gap-sm-3">
+                <div class="countdown-item">
+                    <span id="hari">00</span>
+                    <p>Hari</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="jam">00</span>
+                    <p>Jam</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="menit">00</span>
+                    <p>Menit</p>
+                </div>
+                <div class="countdown-item">
+                    <span id="detik">00</span>
+                    <p>Detik</p>
+                </div>
+            </div>
+        </div>
+
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kiri-bawah">
+    </section>
+
+    <section class="halaman mempelai bg-biru d-flex align-items-center">
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kiri">
+        <div class="container konten-mempelai text-center">
+            <h1 class="judul-bagian">Mempelai</h1>
+
+            <p class="deskripsi-mempelai mx-auto">
+                Dengan penuh rasa syukur dan cinta, kami mengundang
+                Bapak/Ibu/Saudara/i untuk hadir dan menjadi saksi di hari
+                bahagia kami. Sebuah awal baru akan kami jalani bersama,
+                dan kehadiran serta doa restu akan menjadi anugerah
+                terindah bagi kami.
+            </p>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-6">
+                    <div class="profil-mempelai">
+                        <img src="assets/pria.svg" alt="Ilustrasi mempelai pria"
+                            class="foto-mempelai img-fluid">
+                        <h2>Apollo</h2>
+                        <h3>Apollo Zeus</h3>
+                        <p class="keterangan">Putra dari</p>
+                        <p>Ayah Zeus &amp; Ibu Leto</p>
+                        <p>Bekasi</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="profil-mempelai">
+                        <img src="assets/wanita.svg" alt="Ilustrasi mempelai wanita"
+                            class="foto-mempelai img-fluid">
+                        <h2>Daphne</h2>
+                        <h3>Daphne Peneus</h3>
+                        <p class="keterangan">Putri dari</p>
+                        <p>Ayah Peneus &amp; Ibu Laurel</p>
+                        <p>Medan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kanan-bawah">
+    </section>
+
+    <section class="halaman detail-acara bg-putih d-flex align-items-center">
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kanan-atas">
+
+        <div class="container konten-acara text-center">
+            <h1 class="judul-bagian">Detail Acara</h1>
+
+            <div class="row justify-content-center g-4">
+                <div class="col-12 col-md-6">
+                    <div class="kartu-acara h-100">
+                        <h2>Akad Nikah</h2>
+                        <h3>Gedung Gunung Parnassus</h3>
+                        <p>Jalan Phytian No. 34</p>
+                        <p>Minggu, 8 November 2026</p>
+                        <p>08:00-10:00 WIB</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <div class="kartu-acara h-100">
+                        <h2>Resepsi</h2>
+                        <h3>Gedung Gunung Parnassus</h3>
+                        <p>Jalan Phytian No. 34</p>
+                        <p>Minggu, 8 November 2026</p>
+                        <p>10:00-Selesai WIB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kiri-bawah">
+    </section>
+
+    <section class="halaman cerita-kami bg-biru d-flex align-items-center">
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kiri-atas">
+        <div class="container konten-cerita text-center">
+            <h1 class="judul-bagian">Cerita Kami</h1>
+            <div id="carouselStacked" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="kartu-cerita">
+                            <h2>Kenalan</h2>
+                            <h3>Januari, 2022</h3>
+                            <p>Kita pertama kali bertemu di acara teman,
+                                saling lempar senyum dan mulai bertukar cerita.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="kartu-cerita">
+                            <h2>Jadian</h2>
+                            <h3>Februari, 2023</h3>
+                            <p>Dari obrolan jadi candaan, dari candaan jadi
+                                nyaman. Akhirnya, dia bilang,
+                                “Mau nggak jadi pacarku?”</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="kartu-cerita">
+                            <h2>Tunangan</h2>
+                            <h3>Maret, 2025</h3>
+                            <p>Setelah melewati suka dan duka bersama,
+                                dia melamarku dengan senyuman yang tak pernah
+                                aku lupakan.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center gap-3 mt-4">
+                    <button class="btn-cerita" type="button"data-bs-target="#carouselStacked" data-bs-slide="prev"aria-label="Cerita sebelumnya">&#8592;</button>
+                    <button class="btn-cerita" type="button"data-bs-target="#carouselStacked" data-bs-slide="next"aria-label="Cerita berikutnya">&#8594;</button>
+                </div>
+            </div>
+        </div>
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kanan-bawah">
+    </section>
+
+    <section class="halaman photo-gallery bg-putih d-flex align-items-center">
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kanan-atas">
+
+        <div class="container konten-gallery text-center">
+            <h1 class="judul-bagian">Photo Gallery</h1>
+            <div class="row row-cols-3 g-2 galeri-foto">
+                <div class="col"><img src="assets/6.svg" alt="Foto kenangan 1" class="foto-galeri img-fluid rounded"></div>
+                <div class="col"><img src="assets/7.svg" alt="Foto kenangan 2" class="foto-galeri img-fluid rounded"></div>
+                <div class="col"><img src="assets/8.svg" alt="Foto kenangan 3" class="foto-galeri img-fluid rounded"></div>
+                <div class="col"><img src="assets/9.svg" alt="Foto kenangan 4" class="foto-galeri img-fluid rounded"></div>
+                <div class="col"><img src="assets/10.svg" alt="Foto kenangan 5" class="foto-galeri img-fluid rounded"></div>
+                <div class="col"><img src="assets/11.svg" alt="Foto kenangan 6" class="foto-galeri img-fluid rounded"></div>
+                <div class="col"><img src="assets/13.svg" alt="Foto kenangan 7" class="foto-galeri img-fluid rounded"></div>
+                <div class="col"><img src="assets/14.svg" alt="Foto kenangan 8" class="foto-galeri img-fluid rounded"></div>
+                <div class="col"><img src="assets/12.svg" alt="Foto kenangan 9" class="foto-galeri img-fluid rounded"></div>
+            </div>
+        </div>
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kiri-bawah">
+    </section>
+
+    <section class="halaman halaman-rsvp bg-biru d-flex align-items-center">
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kiri-atas">
+
+        <div class="container konten-rsvp">
+            <h1 class="judul-bagian text-center">RSVP</h1>
+
+            <form id="formRSVP" class="mx-auto">
+                <div class="mb-3">
+                    <label for="namaRSVP" class="form-label">Nama</label>
+                    <input type="text" id="namaRSVP" class="form-control" placeholder="Masukkan nama Anda" required>
+                </div>
+                <button type="submit" class="btn btn-undangan w-100">RSVP</button>
+            </form>
+        </div>
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kanan-bawah">
+    </section>
+
+    <div class="modal fade" id="modalRSVP" tabindex="-1"
+        aria-labelledby="judulModalRSVP" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-rsvp">
+                <div class="modal-header">
+                    <h2 class="modal-title fs-5" id="judulModalRSVP">Konfirmasi Kehadiran</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+                </div>
+
+                <div class="modal-body">
+                    <p id="sapaanRSVP">
+                        Silakan pilih acara yang akan Anda hadiri.</p>
+
+                    <div class="pilihan-rsvp">
+                        <label>
+                            <input type="radio" name="pilihanAcara" value="Akad Nikah">
+                            <span>Akad Nikah</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pilihanAcara" value="Resepsi">
+                            <span>Resepsi</span>
+                        </label>
+
+                        <label>
+                            <input type="radio" name="pilihanAcara" value="Akad Nikah dan Resepsi">
+                            <span>Resepsi &amp; Akad</span>
+                        </label>
+                    </div>
+
+                    <p id="pesanErrorRSVP" class="pesan-error">Silakan pilih acara terlebih dahulu.</p>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Batal</button>
+                    <button type="button" id="tombolKonfirmasi" class="btn btn-undangan">Konfirmasi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBerhasil" tabindex="-1"
+        aria-labelledby="judulModalBerhasil" aria-hidden="true">
+
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content modal-rsvp text-center">
+                <div class="modal-body p-4">
+                    <div class="ikon-berhasil">&#10003;</div>
+                    <h2 id="judulModalBerhasil" class="h4">RSVP Berhasil!</h2>
+                    <p id="detailBerhasil">Terima kasih telah mengonfirmasi kehadiran.</p>
+                    <button type="button" class="btn btn-undangan"
+                        data-bs-dismiss="modal">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="halaman halaman-penutup bg-putih d-flex align-items-center">
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kanan-atas">
+
+        <div class="container konten-penutup text-center">
+            <p class="ucapan-penutup"> Atas doa dan ucapan Bapak/Ibu/Saudara/i,
+                kami mengucapkan terima kasih.</p>
+            <p class="salam-penutup">Salam hangat,</p>
+            <h1 class="nama-penutup">Apollo &amp; Daphne</h1>
+        </div>
+        <img src="assets/bunga.svg" alt="" class="bunga bunga-kiri-bawah">
+    </section>
+
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
